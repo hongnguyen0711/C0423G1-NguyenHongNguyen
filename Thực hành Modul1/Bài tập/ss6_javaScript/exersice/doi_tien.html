@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đổi tiền</title>
+</head>
+<style>
+    th, tr, td {
+        text-align: center;
+    }
+</style>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input type="text"name="tien"id="nhaptien"></td>
+        <td>
+            <select name="tien1"id="fromc">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+        </select>
+        </td>
+       <td>
+           <select name="tien2" id="toc">
+               <option value="VND">VND</option>
+               <option value="USD">USD</option>
+           </select>
+       </td>
+        <td><button type="button"onclick="currency()">Conver</button></td>
+
+    </tr>
+</table>
+
+<script>
+    function currency() {
+        let a = document.getElementById("fromc").value;
+        let b = document.getElementById("toc").value;
+        let c = document.getElementById("nhaptien").value;
+
+        if(a == "VND" && b == "USD"){
+            let t = c/23000;
+            document.write("result:" + t + "USD");
+        }
+        else {
+            t1 = c*23000;
+            document.write("result:" + t1 + "VND");
+        }
+    }
+
+</script>
+
+</body>
+</html>

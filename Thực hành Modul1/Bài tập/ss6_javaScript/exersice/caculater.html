@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculater</title>
+</head>
+<body>
+<h1>Calculater</h1>
+<table>
+    <tr>
+        <td><input type="number"placeholder="Nhập số thứ nhất"id="sothunhat"value="0"></td>
+        <td><input type="number"placeholder="Nhập số thứ hai"id="sothuhai"value="0"></td>
+        <td>
+            <button type="button"onclick="cong()">Cộng</button>
+            <button type="button"onclick="tru()">Trừ</button>
+            <button type="button"onclick="nhan()">Nhân</button>
+            <button type="button"onclick="chia()">Chia</button>
+        </td>
+    </tr>
+
+</table>
+<h3>Result:</h3>
+<div id="kq">kết quả là:</div>
+<script>
+    function cong() {
+        let a =+document.getElementById("sothunhat").value;
+        let b =+document.getElementById("sothuhai").value;
+        c = a + b;
+        // alert("Result:" + c);
+        document.getElementById("kq").innerText = c;
+    }
+    function tru() {
+        let a =+document.getElementById("sothunhat").value;
+        let b =+document.getElementById("sothuhai").value;
+        d = a - b;
+        document.getElementById("kq").innerText = d;
+
+    }
+    function nhan() {
+        let a =+document.getElementById("sothunhat").value;
+        let b =+document.getElementById("sothuhai").value;
+        e = a * b;
+        document.getElementById("kq").innerText = e;
+
+    }
+    function chia() {
+        let a =+document.getElementById("sothunhat").value;
+        let b =+document.getElementById("sothuhai").value;
+        f = a/b;
+        document.getElementById("kq").innerText = f;
+
+    }
+</script>
+</body>
+</html>
