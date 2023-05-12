@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>may tính</title>
+
+</head>
+<body>
+<h2>Supper Calculater</h2>
+<input type="text"name="so"id="num"size="15"><br><br>
+<table style="border: 2px solid" width="130px">
+    <tr>
+        <td><button type="button"name="nb"value="1"onclick="nhapgt(this.value)">1</button></td>
+        <td><button type="button"name="nb" value="2"onclick="nhapgt(this.value)">2</button></td>
+        <td><button type="button"name="nb" value="3"onclick="nhapgt(this.value)">3</button></td>
+        <td style="width: 20px"><button type="button"onclick="nhapgt(this.value)" value="+"style="width: 30px"name="pt"  >+</button></td>
+    </tr>
+    <tr>
+        <td><button type="button"name="nb"value="4"onclick="nhapgt(this.value)">4</button></td>
+        <td><button type="button"name="nb"value="5"onclick="nhapgt(this.value)">5</button></td>
+        <td><button type="button"name="nb"value="6"onclick="nhapgt(this.value)">6</button></td>
+        <td><button type="button"name="pt"value="-"onclick="nhapgt(this.value)" style="width: 30px">-</button></td>
+    </tr>
+    <tr>
+        <td><button type="button"name="nb"value="7"onclick="nhapgt(this.value)">7</button></td>
+        <td><button type="button"name="nb"value="8"onclick="nhapgt(this.value)">8</button></td>
+        <td><button type="button"name="nb"value="9"onclick="nhapgt(this.value)">9</button></td>
+        <td><button type="button"name="pt"value="*"onclick="nhapgt(this.value)" style="width: 30px">*</button></td>
+    </tr>
+    <tr>
+        <td><button type="button"onclick="dele()"style="background-color: red">C</button></td>
+        <td><button type="button"name="nb"value="0"onclick="nhapgt(this.value)">0</button></td>
+        <td><button type="button"onclick="tinhtoan()">=</button></td>
+        <td><button type="button"name="pt"value="/"onclick="nhapgt(this.value)" style="width: 30px">/</button></td>
+    </tr>
+</table>
+<script>
+    let next = document.getElementById("num");
+    function nhapgt(value) {
+        next.value += value;
+
+    }
+    function tinhtoan() {
+        let sum = eval(next.value);
+        next.value = sum;
+
+    }
+    function dele() {
+        next.value = "";
+
+    }
+</script>
+
+</body>
+</html>

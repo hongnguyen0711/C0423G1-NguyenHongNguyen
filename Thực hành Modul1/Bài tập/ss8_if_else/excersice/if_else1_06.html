@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hoa hồng</title>
+</head>
+<body>
+<h2>Hoa hồng nhận được!</h2>
+<table>
+    <tr>
+        <td>Doanh số tháng này bạn đạt được là:</td>
+        <td><input type="number"name="ds"id="money" placeholder="Nhập doanh số"></td>
+        <td><button type="button"name="bt"onclick="check()">Kiểm tra</button></td>
+    </tr>
+</table>
+<p id="kq">Số tiền hoa hồng nhận được:</p>
+<script>
+    // Doanh thu >= 5000000 : 3% hoa hồng
+    // Doanh thu >= 7000000 : 5% hoa hồng
+    // Doanh thu >= 10000000: 6 % hoa hồng
+function check() {
+    let money = +document.getElementById("money").value;
+    let tips = document.getElementById("kq");
+    if (money>=10000000) {
+        bonus = (money*6)/100;
+        tips.innerHTML = "Hoa hồng bạn nhận được là:" + bonus + "VND";
+    } else if (money>=7000000) {
+        bonus = (money*5)/100;
+        tips.innerHTML =  "Hoa hồng bạn nhận được là:" + bonus + "VND";
+    } else if (money>=5000000){
+        bonus = (money*3)/100;
+        tips.innerHTML=  "Hoa hồng bạn nhận được là:" + bonus + "VND";
+    } else {
+        tips.innerHTML= "Tháng này bạn chưa đủ doanh số";
+    }
+
+}
+</script>
+</body>
+</html>

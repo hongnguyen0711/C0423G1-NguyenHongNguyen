@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Nhâp a:</td>
+        <td>Nhập b:</td>
+    </tr>
+    <tr>
+        <td><input type="number"name="a"id="gt1"></td>
+        <td><input type="number"name="b"id="gt2"></td>
+    </tr>
+    <tr>
+        <td><button type="button"name="kiemtra"onclick="check()">Kiểm tra</button></td>
+    </tr>
+</table>
+<p id="kq">kết quả:</p>
+<script>
+    function check() {
+        let a = document.getElementById("gt1").value;
+        let b = document.getElementById("gt2").value;
+        let c = document.getElementById("kq");
+        if (a%b == 0) {
+            c.innerHTML = "a chia hết cho b";
+        } else {
+            c.innerHTML = "a không chia hết cho b";
+        }
+
+    }
+</script>
+
+</body>
+</html>

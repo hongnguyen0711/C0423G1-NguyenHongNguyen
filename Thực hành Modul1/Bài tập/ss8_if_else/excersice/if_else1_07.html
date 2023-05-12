@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính cước đt</title>
+</head>
+<body>
+<h2>Cước điện thoại viễn thông</h2>
+<table>
+    <tr>
+        <td>Nhập tổng số phút đã gọi(phút):</td>
+        <td><input type="number"name="phut"id="minute"></td>
+        <td><button type="button"name="bt"onclick="ktra()">Check</button></td>
+    </tr>
+</table>
+<script>
+    function ktra() {
+        let minute = +document.getElementById("minute").value;
+        let money;
+        if (minute>=60) {
+            money = minute*20000;
+            alert("Cước phí tháng này là:" + money + "VND");
+        } else if (minute>=30) {
+            money = minute*30000;
+            alert("Cước phí tháng này là:" + money + "VND");
+        } else if (minute>0) {
+            money = minute * 40000;
+            alert("Cước phí tháng này là:" + money + "VND");
+        }   else {
+                alert("BẠn không nợ phí")
+            }
+
+
+    }
+</script>
+</body>
+</html>

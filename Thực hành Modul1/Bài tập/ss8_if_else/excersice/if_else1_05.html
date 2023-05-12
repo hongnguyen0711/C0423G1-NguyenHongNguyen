@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xep loai</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Điểm thi giữa kỳ:</td>
+        <td><input type="number"name="poin"id="gk"></td>
+    </tr>
+    <tr>
+        <td>Điểm thi cuối kỳ:</td>
+        <td><input type="number"name="point"id="ck"></td>
+        <td><button type="button"name="kt"onclick="check()">Kiểm tra</button></td>
+    </tr>
+</table>
+<p id="xl">Xếp loại</p>
+
+<script>
+    function check() {
+        let a = +document.getElementById("gk").value;
+        let b = +document.getElementById("ck").value;
+        let c = (a+b)/2;
+        let d = document.getElementById("xl");
+        if (c>=8.5) {
+            d.innerHTML = "<h4>Loại Giỏi</h4>";
+        } else if (c>=7) {
+            d.innerHTML = "<h4>Loại Khá</h4>";
+        } else if (c>=5) {
+            d.innerHTML = "<h4>Loại TB</h4>";
+        } else {
+            d.innerHTML = "<h4>Loại Yếu</h4>";
+        }
+
+    }
+</script>
+</body>
+</html>

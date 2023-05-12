@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính lãi suất</title>
+</head>
+<body>
+<h2>TÍNH LÃI SUẤT KÉP CHO VAY</h2>
+<table>
+    <tr>
+        <td>Bạn muốn vay bao nhiêu(VND):</td>
+        <td><input type="number"name="tien"id="money"></td>
+        <td>Bạn muốn vay bao nhiêu tháng:</td>
+        <td><input type="number"name="thang"id="month"></td>
+        <td><button type="button" name="bt"onclick="lai()">Check</button></td>
+    </tr>
+</table>
+<p id="ls">Kết quả:</p>
+</body>
+<script>
+    function lai() {
+        let money = document.getElementById("money").value;
+        let month = document.getElementById("month").value;
+        let kq = document.getElementById("ls");
+        if (month>12) {
+            T = money*Math.pow(1.1,month);
+            kq.innerHTML = "Tổng lãi suất bạn phải trả là:" + T + 'VND';
+        } else {
+            T = money*Math.pow(1.15,month);
+            kq.innerHTML = "Tổng lãi suất bạn phải trả là:" + T + 'VND';
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THuế thu nhập cá nhân</title>
+</head>
+<body>
+<h2>THUẾ THU NHẬP CÁ NHÂN</h2>
+<table>
+    <tr>
+        <td>Nhập lương tháng của bạn(VND):</td>
+        <td><input type="number"name="luong"id="tienluong"></td>
+        <td><button type="button"name="bt"onclick="tinhthue()">Check</button></td>
+    </tr>
+</table>
+<script>
+    function tinhthue() {
+        let a = document.getElementById("tienluong").value;
+        if (a>80000000) {
+            thue = a*35/100 - 9850000;
+            alert("thuế thu nhập cá nhân của bạn là: "+ thue + "VND");
+        } else if (a>32000000) {
+            thue = a*20/100 - 1650000;
+            alert("thuế thu nhập cá nhân của bạn là: "+ thue + "VND");
+        } else if (a>5000000) {
+            thue = a*10/100 - 250000;
+            alert("thuế thu nhập cá nhân của bạn là: "+ thue + "VND");
+        } else {
+            thue = a*5/100;
+            alert("thuế thu nhập cá nhân của bạn là: "+ thue + "VND");
+        }
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI</title>
+</head>
+<body>
+    <h1 style="color: orangered">Chỉ Số BMI</h1>
+    <table>
+        <tr>
+            <td>Vui lòng nhập chiều cao(m):</td>
+            <td>Vui lòng nhập cân nặng(kg):</td>
+        </tr>
+        <tr>
+            <td><input type="text"name="chieucao"id="cao"value="1.7"></td>
+            <td> <input type="text"name="cannang"id="nang"value="65"></td>
+        </tr>
+        <tr>
+            <td><button type="button"onclick="kiemtra()">Kiểm tra</button></td>
+        </tr>
+    </table>
+    <script>
+    function kiemtra() {
+       let h = parseFloat(document.getElementById("cao").value);
+       let w = document.getElementById("nang").value;
+       let bmi = w/(h*h);
+       if (bmi < 18.5) {
+           alert("Underweitht");
+       } else if (bmi < 25.0) {
+           alert("Normal");
+       } else if (bmi < 30.0) {
+           alert("Overweith");
+       } else
+           alert("Obese");
+
+
+    }
+    </script>
+
+
+</body>
+</html>

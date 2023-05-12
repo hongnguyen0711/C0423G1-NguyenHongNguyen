@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pt bậc 2</title>
+</head>
+<body>
+<script>
+    let a = prompt('Nhập vào số a:');
+    let b = prompt('nhập vào số b:');
+    let c = prompt('nhập vào số c:');
+    let dt = b*b-4*a*c;
+    if (a==0) {
+        x = -(c/b);
+        alert("Phương trình có nghiệm:" + x);
+    } else if (dt < 0) {
+        alert('phương trình vô nghiêm!');
+    } else if (dt==0) {
+        x = -b/(2*a);
+        alert('phương trình có nghiệm kép:'+ "x=" + x);
+    } else {
+        x1 = (-b+Math.sqrt(dt))/(2*a);
+        x2 = (-b-Math.sqrt(dt))/(2*a);
+        alert('Phương trình có hai nghiệm phân biệt:'+ "x1=" + x1 + " " +"x2="+ x2);
+    }
+
+</script>
+
+</body>
+</html>
