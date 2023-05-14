@@ -23,11 +23,11 @@
         let month = document.getElementById("month").value;
         let kq = document.getElementById("ls");
         if (month>12) {
-            T = money*Math.pow(1.1,month);
-            kq.innerHTML = "Tổng lãi suất bạn phải trả là:" + T + 'VND';
+            t = money*Math.pow(1+(0.1/12),month);
+            kq.innerHTML = "Tổng lãi suất bạn phải trả là:" + t + 'VND';
         } else {
-            T = money*Math.pow(1.15,month);
-            kq.innerHTML = "Tổng lãi suất bạn phải trả là:" + T + 'VND';
+            t = money*Math.pow(1+(0.15/12),month);
+            kq.innerHTML = "Tổng lãi suất bạn phải trả là:" + t + 'VND';
         }
     }
 </script>
