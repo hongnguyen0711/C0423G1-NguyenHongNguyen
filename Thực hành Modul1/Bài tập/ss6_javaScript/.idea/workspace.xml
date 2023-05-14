@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="be751bcd-ecc0-4a78-bc08-8908b865308d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Bài 3/practice/Tạo CV.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Bài 3/practice/Tạo danh sách.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Bài 3/ss1.drawio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Bài 3/ss2.drawio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Bài 3/ss3.drawio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Bài 3/ss4.drawio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Bài 3/ss5.drawio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/.idea/ss4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/ss4_git_html/exercise/cac the HTML co ban.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/ss4_git_html/practice/Tạo CV.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/ss4_git_html/practice/Tạo danh sách.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/ss5_form_table/exersice/Hardtable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/ss5_form_table/exersice/simpleform.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/ss5_form_table/exersice/thuc_hanh.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/ss5_form_table/practice/Simpletable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/ss5_form_table/practice/Tao_form_dk.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/ss5_form_table/practice/ban_co_vua.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/ss5_form_table/practice/formsurvey.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/ss5_form_table/practice/tao_form_don_gian.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/ss6_javaScript/exersice/area.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/ss6_javaScript/exersice/average.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/ss6_javaScript/exersice/caculater.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/ss6_javaScript/exersice/dien_tich_chu_vi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/ss6_javaScript/exersice/doi_tien.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4/ss6_javaScript/exersice/nhiet_do.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2PbU551K7POUDwZsUs6yUrhxKkQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be751bcd-ecc0-4a78-bc08-8908b865308d" name="Default Changelist" comment="" />
+      <created>1683725088226</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683725088226</updated>
+      <workItem from="1683725089555" duration="34000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1683725122045">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1683725122045" />
+  </component>
+</project>
