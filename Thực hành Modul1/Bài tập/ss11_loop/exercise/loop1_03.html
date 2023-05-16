@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+</head>
+<body>
+<script>
+    let fibo = 0;
+    let f1 = 0;
+    let f2 = 1;
+    let f =0;
+    while (fibo<20){
+        f = f1 + f2;
+        document.write(f1+'<br/>');
+        fibo+=1;
+        f1 = f2;
+        f2 = f;
+    }
+
+
+</script>
+</body>
+</html>

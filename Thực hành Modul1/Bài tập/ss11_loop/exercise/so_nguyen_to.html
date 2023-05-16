@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>số NT</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt('Nhập n số nguuyên tố đầu tiên:'));
+    let uoc = 0;
+    let snt = 0;
+    for (let i = 2; i < 1000; i++) {
+        if (snt < num) {
+            for (j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    uoc += 1
+                }
+            }
+            if (uoc == 2) {
+                document.write(i + "<br>");
+                snt += 1;
+            }
+            uoc = 0;
+        } else {
+            break;
+        }
+
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính tổng dãy fibonacci</title>
+</head>
+<body>
+<script>
+    let fibo = 0;
+    let f1 = 0;
+    let f2 = 1;
+    let f = 0;
+    let sum = 0;
+    while (fibo<20){
+        f = f1 + f2;
+        f1 = f2;
+        f2 = f;
+        fibo++;
+
+    }
+    document.write(f);
+
+</script>
+
+</body>
+</html>

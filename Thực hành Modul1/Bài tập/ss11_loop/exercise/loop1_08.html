@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game đoán số</title>
+</head>
+<body>
+<button onclick="startGame()" id="start">Chơi</button>
+<script>
+    function startGame() {
+        alert('welcom to the guess number games!');
+        let fromNumber = +prompt('Bạn muốn đoán số trong khoảng\n Từ:');
+        let toNumber = +prompt('Đến:');
+        alert('Bạn sẽ đoán số trong khoảng từ' + fromNumber + 'đến' + toNumber);
+        let randomNumber = Math.round(Math.random() * (toNumber - fromNumber) + fromNumber);
+        for (i = 0; i < 3; i++) {
+            let numberGuess = +prompt('Hãy nhập số bạn muốn đoán:');
+            if (numberGuess < randomNumber) {
+                alert('Số bạn đoán nhỏ hơn, hãy đóan lại!');
+            } else if (numberGuess > randomNumber) {
+                alert('Số bạn đoán lớn hơn, hãy đoán lại!');
+            } else if (numberGuess === randomNumber) {
+                alert('congratulations!');
+                break;
+            } else {
+                alert('you lose!');
+            }
+            if (i == 2) {
+                document.getElementById('start').innerText = "Chơi lại";
+        }
+    }
+    }
+</script>
+
+</body>
+</html>

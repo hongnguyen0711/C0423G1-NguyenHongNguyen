@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tổng số chia hết cho 7</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 30;
+    let sum =0;
+    for (let i = 1;i<=1000;i++){
+        if (i%7==0 && a < b) {
+            document.write(i +'<br/>');
+            a++;
+            sum = sum + i;
+        }
+    }
+    document.write('Tổng 30 số nguyên đầu tiên chia hết cho  7 là:'+ sum );
+</script>
+</body>
+</html>

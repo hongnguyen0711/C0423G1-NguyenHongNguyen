@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lãi suất</title>
+</head>
+<body>
+<script>
+    let money = null;
+    let month = null;
+    let laiSuat = null;
+    do {
+        money = +prompt('Hãy nhập số tiền bạn muốn vay:');
+        month = +prompt('Hãy nhập số tháng bạn muốn vay:');
+        laiSuat = money * Math.pow(1 + (0.1 / 12), month);
+        alert('Lãi suất là:' + laiSuat);
+    } while (money >=0);
+
+</script>
+
+</body>
+</html>

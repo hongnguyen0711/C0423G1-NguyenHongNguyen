@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dãy fibonacci</title>
+</head>
+<body>
+<script>
+    let n = prompt('Bạn muốn in ra bao nhiêu số trong dãy fibonacci?');
+    let fibo = 0;
+    let f1 = 0;
+    let f2 = 1;
+    let f =0;
+    while (fibo<n) {
+        f = f1 + f2;
+        document.write(f1 + '<br/>');
+        fibo += 1;
+        f1 = f2;
+        f2 = f;
+    }
+</script>
+
+</body>
+</html>

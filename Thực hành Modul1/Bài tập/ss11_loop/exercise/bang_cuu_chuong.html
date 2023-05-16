@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+    <style>
+        table {
+            width: 600px;
+            border: 1px solid;
+            border-collapse: collapse;
+            background-color: #5f6062;
+        }
+
+        tr, td {
+            border: 1px solid;
+            border-collapse: collapse;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h1>Bảng cửu chương</h1>
+<script>
+    let panel = "<table cellpadding='15'>";
+    for (let i = 1; i <= 10; i++) {
+        panel = panel + "<tr>";
+        for (let j = 1; j <= 10; j++) {
+            panel = panel + "<td>" + i + "*" + j + "=" + i * j;
+        }
+        panel = panel + "</tr>";
+    }
+    panel = panel + "</table>";
+    document.writeln(panel);
+</script>
+
+</body>
+</html>
