@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính trung bình</title>
+</head>
+<body>
+<script>
+    let n = +prompt('nhập vào số lượng phần tử của mảng:');
+    let arr = [];
+    let sum = 0;
+
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt('Nhập vào giá trị thứ:' + (i + 1));
+        sum += arr[i];
+    }
+    let max = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        if (max < arr[i]) {
+            max = arr[i];
+        }
+    }
+    document.write('giá trị lớn nhất là' + max + 'giá trị trung bình là:' + sum / n);
+
+</script>
+</body>
+</html>

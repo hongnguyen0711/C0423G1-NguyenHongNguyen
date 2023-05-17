@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Từ điển</title>
 </head>
 <body>
-$END$
+<table>
+    <tr>
+        <td>Nhập từ:</td>
+        <td><input type="text"id="ip" value=""></td>
+        <td><button type="button" name="btnseach"onclick="timkiem()">seach</button></td>
+    </tr>
+</table>
+<div id="ketQua"></div>
+<script>
+    function timkiem() {
+        let input = document.getElementById('ip').value;
+        let english = ['cat', 'dog', 'bird', 'chicken', 'duck'];
+        let vietNam = ['mèo', 'chó', 'chim', 'gà', 'vịt'];
+        for (let i = 0; i < english.length; i++) {
+            if ( input === english[i]) {
+                document.getElementById("ketQua").innerHTML = vietNam[i];
+                break;
+            } else {
+                document.getElementById("ketQua").innerHTML = 'Không tìm thấy!';
+            }
+        }
+    }
+
+</script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược mảng</title>
+</head>
+<body>
+<script>
+    let n = +prompt('nhập vào số lượng phần tử của mảng:');
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt('Nhập vào giá trị thứ:' + (i + 1));
+    }
+    let gtDau = 0;
+    let gtCuoi = arr.length - 1;
+    let count;
+    while (gtDau < gtCuoi) {
+        count = arr[gtDau];
+        arr[gtDau] = arr[gtCuoi];
+        arr[gtCuoi] = count;
+        gtCuoi--;
+        gtDau++;
+    }
+    document.writeln('mảng sau khi đảo ngược là:' + arr);
+
+</script>
+</body>
+</html>

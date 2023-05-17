@@ -2,9 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>sử dụng hàm có sẵn</title>
 </head>
 <body>
-$END$
+<script>
+    //bai 1
+    let arr = ['chó', 'mèo', 'gà', 'vịt', 'heo'];
+    document.writeln(arr.join('+'));
+
+    //bai 2
+    let str = prompt('Hãy nhập vào một số bất kì:');
+    let arr = [str[0]];
+    for (let i = 1; i < str.length; i++) {
+        if ((str[i - 1] % 2 === 0) && (str[i] % 2 === 0)) {
+            arr.push('-', str[i]);
+        } else {
+            arr.push(str[i]);
+        }
+    }
+    document.writeln(arr.join(" "));
+
+    //bai 3
+    var str = prompt('Hãy nhập vào chuỗi kí tự:');
+    const hoa = 'ABCDEFGHIJKLMNOPQRSTUVWiYZ';
+    const thuong = 'abcdefghijklmnopqrstuvwiyz';
+    const text = [];
+
+    for (let i = 0; i < str.length; i++) {
+        if (hoa.includes(str[i])) {
+            text.push(str[i].toLowerCase());
+        } else if (thuong.includes(str[i])) {
+            text.push(str[i].toUpperCase());
+        } else {
+            text.push(str[i]);
+        }
+    }
+    document.write(text.join(''));
+</script>
 </body>
 </html>
