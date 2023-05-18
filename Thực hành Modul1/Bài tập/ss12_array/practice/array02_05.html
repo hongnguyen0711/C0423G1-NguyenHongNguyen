@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = prompt('nhập vào số lượng phần tử của mảng thứ nhất:');
+    let arr1 = [];
+    let count = 0;
+    for (let i = 0; i < n; i++) {
+        arr1[i] = prompt('Nhập vào giá trị thứ:' + (i + 1));
+    }
+    let m = prompt('nhập vào số lượng phần tử của mảng thứ hai:');
+    let arr2 = [];
+    for (let i = 0; i < m; i++) {
+        arr2[i] = prompt('Nhập vào giá trị thứ:' + (i + 1));
+    }
+    for (let i = 0; i <arr1.length ; i++) {
+        if (arr1[i]===arr2[i]){
+            count++;
+        }
+    }
+    if (count===arr1.length && count===arr2.length) {
+        alert('hai chuỗi giống nhau!');
+    } else {
+        alert('hai chuỗi không giống nhau!');
+    }
+</script>
+</body>
+</html>
