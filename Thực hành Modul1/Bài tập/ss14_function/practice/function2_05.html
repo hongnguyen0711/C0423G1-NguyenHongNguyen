@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm min</title>
+</head>
+<body>
+<script>
+    function findMin(a, b, c) {
+        let min = (a < b) ? a : b;
+        min = (min < c ? min : c);
+        return 'số nhỏ nhất là' + min;
+    }
+
+    let a = +prompt('hãy nhập vào số nguyên thứ nhất:');
+    let b = +prompt('hãy nhập vào số nguyên thứ hai:');
+    let c = +prompt('hãy nhập vào số nguyên thứ ba:');
+    alert(findMin(a, b, c));
+
+</script>
+</body>
+</html>

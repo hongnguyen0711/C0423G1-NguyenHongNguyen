@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>so sánh 2 tham số</title>
+</head>
+<body>
+<script>
+    function compare(a, b) {
+        if (a > b) {
+            return 'số thứ nhất lớn hơn số thứ hai';
+        } else {
+            return 'tổng của hai số là:' + (a + b);
+        }
+
+    }
+
+    let a = +prompt('nhập vào số thứ nhất:');
+    let b = +prompt('nhập vào số thứ hai:');
+    document.write(compare(a, b));
+</script>
+</body>
+</html>

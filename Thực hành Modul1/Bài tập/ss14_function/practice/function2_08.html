@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đảo ngược mảng</title>
+</head>
+<body>
+<script>
+    function swapArr(arr) {
+        let fistnumber = 0;
+        let lastNumber = arr.length - 1;
+        let replace
+        while (fistnumber < lastNumber) {
+            replace = arr[fistnumber];
+            arr[fistnumber] = arr[lastNumber];
+            arr[lastNumber] = replace;
+            fistnumber++;
+            lastNumber--;
+        }
+        return 'mảng sau khi đảo ngược:' + arr;
+
+    }
+
+    let n = prompt('nhập vào số lượng phần tử của mảng:');
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt('Nhập vào giá trị thứ:' + (i + 1));
+    }
+    document.write(swapArr(arr));
+</script>
+</body>
+</html>

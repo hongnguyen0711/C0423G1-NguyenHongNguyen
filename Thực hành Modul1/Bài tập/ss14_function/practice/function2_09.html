@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check(arr, input) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === input) {
+                count++;
+            }
+        }
+        if (count !== 0) {
+            return 'số lần' + input + 'xuất hiện trong mảng là:' + count;
+        } else {
+            return 'không xuât hiện trong mảng!'
+        }
+
+    }
+
+    let n = prompt('nhập vào số lượng phần tử của mảng:');
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt('Nhập vào giá trị thứ:' + (i + 1));
+    }
+    let input = prompt('Hãy nhập kí tự cần kiểm tra:');
+    alert(check(arr, input));
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đổi feet và meter</title>
+</head>
+<body>
+<script>
+    function swapFeet(meter) {
+        let feet = meter * 3.279;
+        return feet;
+    }
+
+    function swapmMeter(feet) {
+        let meter = 0.305 * feet;
+        return meter;
+    }
+
+    let inputMeter = +prompt('nhập vào số meter:');
+    document.write(inputMeter + 'meter' + '=' + swapFeet(inputMeter) + 'feet' + '<br/>');
+    let inputFeet = +prompt('nhập vào số feet:');
+    document.write(inputFeet + 'feet' + '=' + swapmMeter(inputFeet) + 'meter');
+</script>
+</body>
+</html>

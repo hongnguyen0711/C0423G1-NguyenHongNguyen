@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diện tích chu vi</title>
+</head>
+<body>
+<script>
+    function caculateArea(r) {
+        let area = 3.14 * r * r;
+        return 'diện tích hình tròn là:' + area;
+    }
+
+    function caculatePerimeter(r) {
+        let perimeter = 2 * 3.14 * r;
+        return 'chu vi hình tròn là:' + perimeter;
+    }
+
+    let input = +prompt('Hãy nhập vào bán kính hình tròn(m):');
+    document.write(caculateArea(input) + "m2" + '<br>' + caculatePerimeter(input) + "m");
+</script>
+</body>
+</html>

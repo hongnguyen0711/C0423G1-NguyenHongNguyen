@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra số</title>
+</head>
+<body>
+<script>
+    function checkNumber(number) {
+        if (number / number === 1) {
+            return number + 'là số';
+        } else {
+            return number + 'không là số';
+        }
+    }
+
+    let input = prompt('Hãy nhập vào ký tự bất kì:');
+    alert(checkNumber(input));
+</script>
+</body>
+</html>
