@@ -8,11 +8,27 @@
 <script>
     class Apple {
         constructor() {
-            this.weight = 10;
+            this.weight = 6;
         }
 
         getWeight() {
             return this.weight;
+        }
+
+        isEmpty() {
+            if (this.weight > 5) {
+                alert('còn nhiều táo lắm');
+            } else {
+                alert('táo sắp hết rồi!');
+            }
+        }
+
+        decrease() {
+            if (this.weight === 0) {
+                alert('Táo đã hết sạch!')
+            } else {
+                return this.weight = this.weight - 1;
+            }
         }
 
     }
@@ -26,22 +42,28 @@
         }
 
         say() {
-            alert('Lets eat apple!');
+            if (this.gender){
+                alert(this. name  + 'Said :Lets eat apple!');
+            } else {
+                alert(this.name + 'Said: No,Im on a diet!');
+            }
         }
 
         checkApple(apple) {
             this.apple = apple;
-            alert('quả táo còn' + this.apple.weight + 'đv');
+            this.apple.isEmpty();
         }
 
         eatApple(apple) {
             this.apple = apple;
-            alert(this.name + ' Đã ăn một đv táo');
-            this.apple.weight = this.apple.weight - 1;
-            this.weight = this.weight + 1;
-            alert('Quả táo còn' + this.apple.weight + 'đv');
-            alert('khối lượng ' + '' + this.name + 'là:' + this.weight + 'đv');
-
+            if (this.apple.weight === 0) {
+                alert('Táo đã hết rồi!')
+            } else {
+                alert(this.name + ' Đã ăn một đv táo');
+                this.weight = this.weight + 1;
+                alert('Quả táo còn' + this.apple.decrease() + 'đv');
+                alert('khối lượng ' + '' + this.name + 'là:' + this.weight + 'đv');
+            }
         }
 
         getName() {
@@ -72,10 +94,18 @@
     let apple = new Apple();
     let human = new Human('adam', true, 65);
     let human2 = new Human('eva', false, 55);
+    let human3 = new Human('zeus', true, 70);
+
     human.say();
+    human2.say();
+
     human.checkApple(apple);
     human.eatApple(apple);
+
     human2.eatApple(apple);
+
+    human3.checkApple(apple);
+    human3.eatApple(apple);
 
 
 </script>
