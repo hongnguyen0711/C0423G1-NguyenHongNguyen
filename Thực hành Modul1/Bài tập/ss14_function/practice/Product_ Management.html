@@ -48,7 +48,9 @@
     function addProduct() {
         product.push(document.getElementById('input').value);
         document.getElementById('number').innerText = product.length + 'product';
+        document.getElementById('input').value = "";
         displayProduct();
+
     }
 
     function deleteProduct(i) {
