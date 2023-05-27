@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính thuế</title>
+</head>
+<body>
+<script>
+    let money = +prompt('Hãy nhập vào số lương của bạn(VNĐ):');
+    let tax = 0;
+    let realMoney = 0;
+    if (money >= 15000000) {
+        tax = money * 20 / 100;
+        realMoney = money - tax;
+        alert('Tiền thuế phải nộp là:' + tax + 'VNĐ' + ' ' + 'Lương ròng là:' + realMoney + 'VNĐ');
+    } else if (money >= 7000000) {
+        tax = money * 10 / 100;
+        realMoney = money - tax;
+        alert('Tiền thuế phải nộp là:' + tax + 'VNĐ' + ' ' + 'Lương ròng là:' + realMoney + 'VNĐ');
+    } else if (money > 0) {
+        tax = money * 5 / 100;
+        realMoney = money - tax;
+        alert('Tiền thuế phải nộp là:' + tax + 'VNĐ' + ' ' + 'Lương ròng là:' + realMoney + 'VNĐ');
+    }
+</script>
+</body>
+</html>
