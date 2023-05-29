@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let str1 = prompt('Hãy nhập vào sâu bất kỳ:');
+    str1 = str1.split(' ');
+    let str = [];
+    for (let i = 0; i < str1.length; i++) {
+        if (str1[i] !== "") {
+            str.push(str1[i]);
+        }
+    }
+    let max = 0;
+    let wordMax = '';
+    let newArr = [];
+    for (let i = 0; i < str.length; i++) {
+        str[i] = str[i].toLowerCase();
+        newArr = str[i].split("");
+        newArr[0] = newArr[0].toUpperCase();
+        str[i] = newArr.join("");
+
+        if (max < str[i].length) {
+            max = str[i].length;
+            wordMax = str[i];
+        }
+    }
+    str = str.join(" ");
+    document.write(str + '<br/>' + 'từ dài nhất là: ' + wordMax);
+</script>
+</body>
+</html>

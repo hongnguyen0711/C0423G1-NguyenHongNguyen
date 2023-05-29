@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table, tr, td, th {
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+<button onclick="addStudent()">Thêm mới học viên</button>
+<button onclick="editStudent()">Sủa thông tin học viên</button>
+<button onclick="deleteStudent()">Xóa học viên</button>
+<table id="stp">
+
+</table>
+
+<script>
+    class Student {
+        constructor(id, name, room, email, date, module) {
+            this.id = id;
+            this.name = name;
+            this.room = room;
+            this.email = email;
+            this.date = date;
+            this.module = module;
+            this.mssv = '' ;
+        }
+        setMssv() {
+            if (this.id >= 0 && this.id <=9) {
+                this.mssv = 'HV-000' + this.id;
+            } else if(this.id >=10 && this.id <=99){
+                this.mssv = 'HV-00' + this.id;
+            }
+        }
+    }
+
+    let arrStudents = [];
+    let st1 = new Student(1, 'Nguyễn Văn A', 10, 'a@gmail.com', '20.11.1999', 1);
+    st1.setMssv();
+    let st2 = new Student(2, 'Nguyễn Văn B', 11, 'b@gmail.com', '20.11.1998', 1);
+    st2.setMssv();
+    arrStudents.push(st1, st2);
+
+    function display() {
+        let strTable = `
+            <tr>
+                <th>Mã học viên</th>
+                <th>Tên học viên</th>
+                <th>Lớp</th>
+                <th>Email</th>
+                <th>Ngày sinh</th>
+            </tr>
+
+        `;
+        for (let i = 0; i < arrStudents.length; i++) {
+            strTable += `
+                <tr>
+                <td>${arrStudents[i].mssv}</td>
+                <td>${arrStudents[i].name}</td>
+                <td>${arrStudents[i].room}</td>
+                <td>${arrStudents[i].email}</td>
+                <td>${arrStudents[i].date}</td>
+                </tr>
+            `;
+        }
+        document.getElementById('stp').innerHTML = strTable;
+    }
+
+    display();
+
+    function addStudent() {
+        let id = +prompt('Nhập id:');
+        let name = prompt('Nhập tên:');
+        let room = prompt('Nhập lớp:');
+        let date = prompt('Nhập ngày sinh:');
+        let email = prompt('Nhập email:');
+        let module = prompt('Nhập module:');
+        let newStudent = new Student(id, name, room, email, date, module);
+        newStudent.setMssv();
+        arrStudents.push(newStudent);
+        display();
+    }
+
+    function editStudent() {
+        let id = +prompt('Nhập id:');
+        let flag = false;
+        for (let i = 0; i < arrStudents.length; i++) {
+            if (arrStudents[i].id === id) {
+                alert(` bạn muốn sửa học viên ${arrStudents[i].name} `);
+                arrStudents[i].name = prompt('Nhập tên mới:') ;
+                arrStudents[i].room = prompt('Nhập lớp mới:');
+                arrStudents[i].date = prompt('Nhập ngày sinh mới:');
+                arrStudents[i].email = prompt('Nhập email mới:');
+                arrStudents[i].module = prompt('Nhập module mới:');
+                flag=true;
+            }
+        }
+        if (flag===false){
+            alert('cúp học!');
+        }
+        display();
+    }
+    function deleteStudent() {
+    let id = +prompt('Nhập id:');
+    let flag= false;
+        for (let i = 0; i < arrStudents.length; i++) {
+            if (arrStudents[i].id === id){
+                if(confirm('bạn muốn xóa học viên' + arrStudents[i].name + '?')) {
+                    arrStudents.splice(i,1);
+                }
+                flag = true;
+            }
+        }
+        if (flag === false) {
+            alert('cúp học!');
+        }
+        display();
+    }
+
+
+</script>
+</body>
+</html>

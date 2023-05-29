@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm chỉ số phân số</title>
+</head>
+<body>
+<script>
+    let tuSo = [5, 2, 5];
+    let mauSo = [6, 3, 4];
+    let max = tuSo[0] / mauSo[0];
+    let index = 0;
+    for (let i = 0; i < tuSo.length; i++) {
+        if (max < tuSo[i] / mauSo[i]) {
+            max = tuSo[i] / mauSo[i];
+            index = i;
+        }
+    }
+    document.write('phân số lớn nhất là:' + tuSo[index] + '/' + mauSo[index] + 'ở vị trí:' + index);
+</script>
+</body>
+</html>

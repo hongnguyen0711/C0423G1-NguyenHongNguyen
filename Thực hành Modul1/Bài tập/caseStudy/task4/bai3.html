@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt('Hãy nhập vào chuối bất kì:');
+    let b = prompt('Hãy nhập vào chuối bất kì:');
+    let arr = a.split('');
+    let brr = b.split('');
+    let crr = [];
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < brr.length; j++) {
+            if (arr[i] === brr[j]) {
+                crr.push(brr[j]);
+                brr.splice(j, 1,);
+                count++;
+                break;
+            }
+        }
+    }
+    document.write('Hai chuỗi có' + count + 'kí tự chung là:' + crr);
+</script>
+</body>
+</html>
